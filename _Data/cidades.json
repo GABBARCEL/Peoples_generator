@@ -1,0 +1,265 @@
+  {
+    "AC": [
+      ["Rio Branco", "68"],
+      ["Cruzeiro do Sul", "68"],
+      ["Sena Madureira", "68"],
+      ["Tarauacá", "68"],
+      ["Feijó", "68"],
+      ["Brasileia", "68"],
+      ["Xapuri", "68"],
+      ["Plácido de Castro", "68"]
+    ],
+    "AL": [
+      ["Maceió", "82"],
+      ["Arapiraca", "82"],
+      ["Rio Largo", "82"],
+      ["Palmeira dos Índios", "82"],
+      ["União dos Palmares", "82"],
+      ["Penedo", "82"],
+      ["São Miguel dos Campos", "82"],
+      ["Delmiro Gouveia", "82"]
+    ],
+    "AP": [
+      ["Macapá", "96"],
+      ["Santana", "96"],
+      ["Laranjal do Jari", "96"],
+      ["Oiapoque", "96"],
+      ["Mazagão", "96"],
+      ["Porto Grande", "96"],
+      ["Tartarugalzinho", "96"],
+      ["Pedra Branca do Amapari", "96"]
+    ],
+    "AM": [
+      ["Manaus", "92"],
+      ["Parintins", "92"],
+      ["Itacoatiara", "92"],
+      ["Manacapuru", "92"],
+      ["Coari", "97"],
+      ["Tefé", "97"],
+      ["Tabatinga", "97"],
+      ["Humaitá", "97"]
+    ],
+    "BA": [
+      ["Salvador", "71"],
+      ["Feira de Santana", "75"],
+      ["Vitória da Conquista", "77"],
+      ["Camaçari", "71"],
+      ["Itabuna", "73"],
+      ["Juazeiro", "74"],
+      ["Lauro de Freitas", "71"],
+      ["Ilhéus", "73"]
+    ],
+    "CE": [
+      ["Fortaleza", "85"],
+      ["Caucaia", "85"],
+      ["Juazeiro do Norte", "88"],
+      ["Maracanaú", "85"],
+      ["Sobral", "88"],
+      ["Crato", "88"],
+      ["Itapipoca", "88"],
+      ["Quixadá", "88"]
+    ],
+    "DF": [
+      ["Brasília", "61"]
+    ],
+    "ES": [
+      ["Vitória", "27"],
+      ["Vila Velha", "27"],
+      ["Serra", "27"],
+      ["Cariacica", "27"],
+      ["Linhares", "27"],
+      ["Colatina", "27"],
+      ["Guarapari", "27"],
+      ["Aracruz", "27"]
+    ],
+    "GO": [
+      ["Goiânia", "62"],
+      ["Aparecida de Goiânia", "62"],
+      ["Anápolis", "62"],
+      ["Rio Verde", "64"],
+      ["Luziânia", "61"],
+      ["Águas Lindas de Goiás", "61"],
+      ["Valparaíso de Goiás", "61"],
+      ["Trindade", "62"]
+    ],
+    "MA": [
+      ["São Luís", "98"],
+      ["Imperatriz", "99"],
+      ["São José de Ribamar", "98"],
+      ["Timon", "99"],
+      ["Caxias", "99"],
+      ["Codó", "99"],
+      ["Paço do Lumiar", "98"],
+      ["Bacabal", "99"]
+    ],
+    "MT": [
+      ["Cuiabá", "65"],
+      ["Várzea Grande", "65"],
+      ["Rondonópolis", "66"],
+      ["Sinop", "66"],
+      ["Tangará da Serra", "65"],
+      ["Cáceres", "65"],
+      ["Sorriso", "66"],
+      ["Lucas do Rio Verde", "65"]
+    ],
+    "MS": [
+      ["Campo Grande", "67"],
+      ["Dourados", "67"],
+      ["Três Lagoas", "67"],
+      ["Corumbá", "67"],
+      ["Ponta Porã", "67"],
+      ["Naviraí", "67"],
+      ["Nova Andradina", "67"],
+      ["Aquidauana", "67"]
+    ],
+    "MG": [
+      ["Belo Horizonte", "31"],
+      ["Uberlândia", "34"],
+      ["Contagem", "31"],
+      ["Juiz de Fora", "32"],
+      ["Betim", "31"],
+      ["Montes Claros", "38"],
+      ["Ribeirão das Neves", "31"],
+      ["Uberaba", "34"]
+    ],
+    "PA": [
+      ["Belém", "91"],
+      ["Ananindeua", "91"],
+      ["Santarém", "93"],
+      ["Marabá", "94"],
+      ["Castanhal", "91"],
+      ["Parauapebas", "94"],
+      ["Abaetetuba", "91"],
+      ["Altamira", "93"]
+    ],
+    "PB": [
+      ["João Pessoa", "83"],
+      ["Campina Grande", "83"],
+      ["Santa Rita", "83"],
+      ["Patos", "83"],
+      ["Bayeux", "83"],
+      ["Sousa", "83"],
+      ["Cajazeiras", "83"],
+      ["Cabedelo", "83"]
+    ],
+    "PR": [
+      ["Curitiba", "41"],
+      ["Londrina", "43"],
+      ["Maringá", "44"],
+      ["Ponta Grossa", "42"],
+      ["Cascavel", "45"],
+      ["São José dos Pinhais", "41"],
+      ["Foz do Iguaçu", "45"],
+      ["Colombo", "41"]
+    ],
+    "PE": [
+      ["Recife", "81"],
+      ["Jaboatão dos Guararapes", "81"],
+      ["Olinda", "81"],
+      ["Caruaru", "81"],
+      ["Petrolina", "87"],
+      ["Paulista", "81"],
+      ["Cabo de Santo Agostinho", "81"],
+      ["Camaragibe", "81"]
+    ],
+    "PI": [
+      ["Teresina", "86"],
+      ["Parnaíba", "86"],
+      ["Picos", "89"],
+      ["Piripiri", "86"],
+      ["Floriano", "89"],
+      ["Campo Maior", "86"],
+      ["Barras", "86"],
+      ["União", "86"]
+    ],
+    "RJ": [
+      ["Rio de Janeiro", "21"],
+      ["São Gonçalo", "21"],
+      ["Duque de Caxias", "21"],
+      ["Nova Iguaçu", "21"],
+      ["Niterói", "21"],
+      ["Campos dos Goytacazes", "22"],
+      ["Belford Roxo", "21"],
+      ["Petrópolis", "24"]
+    ],
+    "RN": [
+      ["Natal", "84"],
+      ["Mossoró", "84"],
+      ["Parnamirim", "84"],
+      ["São Gonçalo do Amarante", "84"],
+      ["Macaíba", "84"],
+      ["Ceará-Mirim", "84"],
+      ["Caicó", "84"],
+      ["Assu", "84"]
+    ],
+    "RS": [
+      ["Porto Alegre", "51"],
+      ["Caxias do Sul", "54"],
+      ["Pelotas", "53"],
+      ["Canoas", "51"],
+      ["Santa Maria", "55"],
+      ["Gravataí", "51"],
+      ["Viamão", "51"],
+      ["Novo Hamburgo", "51"]
+    ],
+    "RO": [
+      ["Porto Velho", "69"],
+      ["Ji-Paraná", "69"],
+      ["Ariquemes", "69"],
+      ["Vilhena", "69"],
+      ["Cacoal", "69"],
+      ["Rolim de Moura", "69"],
+      ["Jaru", "69"],
+      ["Guajará-Mirim", "69"]
+    ],
+    "RR": [
+      ["Boa Vista", "95"],
+      ["Rorainópolis", "95"],
+      ["Caracaraí", "95"],
+      ["Alto Alegre", "95"],
+      ["Mucajaí", "95"],
+      ["Cantá", "95"],
+      ["Bonfim", "95"],
+      ["Pacaraima", "95"]
+    ],
+    "SC": [
+      ["Florianópolis", "48"],
+      ["Joinville", "47"],
+      ["Blumenau", "47"],
+      ["São José", "48"],
+      ["Criciúma", "48"],
+      ["Chapecó", "49"],
+      ["Itajaí", "47"],
+      ["Lages", "49"]
+    ],
+    "SP": [
+      ["São Paulo", "11"],
+      ["Campinas", "19"],
+      ["Guarulhos", "11"],
+      ["São Bernardo do Campo", "11"],
+      ["Santo André", "11"],
+      ["Osasco", "11"],
+      ["Sorocaba", "15"],
+      ["Ribeirão Preto", "16"]
+    ],
+    "SE": [
+      ["Aracaju", "79"],
+      ["Nossa Senhora do Socorro", "79"],
+      ["Lagarto", "79"],
+      ["Itabaiana", "79"],
+      ["São Cristóvão", "79"],
+      ["Estância", "79"],
+      ["Tobias Barreto", "79"],
+      ["Simão Dias", "79"]
+    ],
+    "TO": [
+      ["Palmas", "63"],
+      ["Araguaína", "63"],
+      ["Gurupi", "63"],
+      ["Porto Nacional", "63"],
+      ["Paraíso do Tocantins", "63"],
+      ["Colinas do Tocantins", "63"],
+      ["Guaraí", "63"],
+      ["Araguatins", "63"]
+    ]
+  }
