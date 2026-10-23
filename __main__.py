@@ -3,8 +3,7 @@ from _manager.Generator import *
 from time import sleep
 
 def welcome():
-    print("""
-    \n
+    print(r"""
     $$\   $$\           $$\ $$\                 $$\      $$\                     $$\       $$\ $$\ 
     $$ |  $$ |          $$ |$$ |                $$ | $\  $$ |                    $$ |      $$ |$$ |
     $$ |  $$ | $$$$$$\  $$ |$$ | $$$$$$\        $$ |$$$\ $$ | $$$$$$\   $$$$$$\  $$ | $$$$$$$ |$$ |
@@ -20,7 +19,7 @@ def welcome():
     """)
 
 def goodBye():
-    print("""
+    print(r"""
 
  $$$$$$\                            $$\       $$$$$$$\                      $$\ 
 $$  __$$\                           $$ |      $$  __$$\                     $$ |
