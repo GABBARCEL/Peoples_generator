@@ -100,7 +100,6 @@ def save(saveObject):
                 saving = saveAsJSON_folder(saveObject)
                 print(f"List saved successfully in {saving}")
                 return saving
-                break
             elif response == "2":
                 saving = saveAsDB_folder(saveObject)
                 print(f"List saved successfully in {saving}")
@@ -110,6 +109,7 @@ def save(saveObject):
                 print(saveObject)
                 print("\n\n\n\n\n")
                 print("List printed successfully!")
+                break
 
 if __name__ == "__main__":
     ASCIItext.welcome()
