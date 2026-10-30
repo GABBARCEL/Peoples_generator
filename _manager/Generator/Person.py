@@ -9,6 +9,24 @@ import json
 #    pessoaPt2 -> RG, CPF;
 #    pessoaPt3 -> Cidade, email e telefone.
 
+# Formato final: 
+# {
+#     "id": 1,
+#     "nome": "nome sobrenome1 sobrenome2",
+#     "sobrenome": [
+#         "sobrenome1",
+#         "sobrenome2"
+#     ],
+#     "sexo": "Masculino", # Fim da pessoaPt1
+#     "nascimento": "00/00/0000",
+#     "CPF": "123.456.789-10",
+#     "RG": "00.000.000-0", # Fim da pessoaPt2
+#     "Estado": "SP",
+#     "cidade": "São Paulo SP",
+#     "email": "nomeSobrenome1@email.com",
+#     "telefone": "11-999999999" # Fim da pessoaPt3
+# }
+
 def createIndividue(numero, anoMinimo, anoMaximo):
     def genPessoaPt1(id, anoNascimentoMinimo, anoNasimentoMaximo):
         id = numero

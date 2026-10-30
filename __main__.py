@@ -79,7 +79,7 @@ def save(saveObject):
     print("     How would you like to save your data?\n")
     print("""
                     [1] JSON
-                    [2] DataBase [ not yet available :( ]
+                    [2] DataBase
                     [3] Text (at this terminal)
                     [Ctrl + c] to cancel
 
@@ -102,22 +102,21 @@ def save(saveObject):
                 return saving
                 break
             elif response == "2":
-                print("This option not yet available ")
-                break
+                saving = saveAsDB_folder(saveObject)
+                print(f"List saved successfully in {saving}")
+                return saving
             elif response == "3":
                 print("\n\n\n\n\n")
                 print(saveObject)
                 print("\n\n\n\n\n")
                 print("List printed successfully!")
 
-
-
 if __name__ == "__main__":
     ASCIItext.welcome()
     sleep(1)
     print("Welcome to peoples generator!")
     sleep(2)
-    print("Here you can create fake peoples, and save it in JSON files!")
+    print("Here you can create fake peoples, and save it in JSON files or as databases!")
     sleep(3)
     print("Please note that these are FICTITIOUS data, which must not be used for malicious purposes!")
     sleep(3)
