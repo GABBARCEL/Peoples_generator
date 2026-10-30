@@ -1,39 +1,7 @@
 from _manager import *
 from _manager.Generator import *
 from time import sleep
-
-def welcome():
-    print(r"""
-    $$\   $$\           $$\ $$\                 $$\      $$\                     $$\       $$\ $$\ 
-    $$ |  $$ |          $$ |$$ |                $$ | $\  $$ |                    $$ |      $$ |$$ |
-    $$ |  $$ | $$$$$$\  $$ |$$ | $$$$$$\        $$ |$$$\ $$ | $$$$$$\   $$$$$$\  $$ | $$$$$$$ |$$ |
-    $$$$$$$$ |$$  __$$\ $$ |$$ |$$  __$$\       $$ $$ $$\$$ |$$  __$$\ $$  __$$\ $$ |$$  __$$ |$$ |
-    $$  __$$ |$$$$$$$$ |$$ |$$ |$$ /  $$ |      $$$$  _$$$$ |$$ /  $$ |$$ |  \__|$$ |$$ /  $$ |\__|
-    $$ |  $$ |$$   ____|$$ |$$ |$$ |  $$ |      $$$  / \$$$ |$$ |  $$ |$$ |      $$ |$$ |  $$ |    
-    $$ |  $$ |\$$$$$$$\ $$ |$$ |\$$$$$$  |      $$  /   \$$ |\$$$$$$  |$$ |      $$ |\$$$$$$$ |$$\ 
-    \__|  \__| \_______|\__|\__| \______/       \__/     \__| \______/ \__|      \__| \_______|\__|
-                                                                                                   
-                                                                                                   
-                                                                                                 
-    
-    """)
-
-def goodBye():
-    print(r"""
-
- $$$$$$\                            $$\       $$$$$$$\                      $$\ 
-$$  __$$\                           $$ |      $$  __$$\                     $$ |
-$$ /  \__| $$$$$$\   $$$$$$\   $$$$$$$ |      $$ |  $$ |$$\   $$\  $$$$$$\  $$ |
-$$ |$$$$\ $$  __$$\ $$  __$$\ $$  __$$ |      $$$$$$$\ |$$ |  $$ |$$  __$$\ $$ |
-$$ |\_$$ |$$ /  $$ |$$ /  $$ |$$ /  $$ |      $$  __$$\ $$ |  $$ |$$$$$$$$ |\__|
-$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |      $$ |  $$ |$$ |  $$ |$$   ____|    
-\$$$$$$  |\$$$$$$  |\$$$$$$  |\$$$$$$$ |      $$$$$$$  |\$$$$$$$ |\$$$$$$$\ $$\ 
- \______/  \______/  \______/  \_______|      \_______/  \____$$ | \_______|\__|
-                                                        $$\   $$ |              
-                                                        \$$$$$$  |              
-                                                         \______/               
-
-""")
+from _ASCII import ASCIItext
 
 def singlePerson():
     print("\nTo generate your data, we need a range of years during which this person might have been born.")
@@ -143,17 +111,18 @@ def save(saveObject):
                 print("List printed successfully!")
 
 
+
 if __name__ == "__main__":
+    ASCIItext.welcome()
+    sleep(1)
+    print("Welcome to peoples generator!")
+    sleep(2)
+    print("Here you can create fake peoples, and save it in JSON files!")
+    sleep(3)
+    print("Please note that these are FICTITIOUS data, which must not be used for malicious purposes!")
+    sleep(3)
     while True:
         options = ["1", "2", "3"]
-        welcome()
-        sleep(2)
-        print("Welcome to peoples generator!")
-        sleep(2)
-        print("Here you can create fake peoples, and save it in JSON files!")
-        sleep(5)
-        print("Please note that these are FICTITIOUS data, which must not be used for malicious purposes!")
-        sleep(3)
 
         print("\n \n        Choose an action by typing the number corresponding to your choice:")
         print("""
@@ -175,8 +144,8 @@ if __name__ == "__main__":
             list_person = multiplesPeoples()
 
         else:
-            goodBye()
-            sleep(5)
+            ASCIItext.goodBye()
+            sleep(3)
             break
 
         save(list_person)
