@@ -3,12 +3,14 @@ import json
 import sqlite3
 from pathlib import Path
 from datetime import datetime
+from _manager.config import outputPath
 
-outputPath = Path(__file__).resolve().parent.parent / "output" # Achei melhor deixar o escopo do output público
+# Usei assim, porque me parece mais certo usar uma variável local do que global. (acho que sou burro)
+output = outputPath
 
 def saveAsJSON_folder(peoples):     # Lembrar futuramente de adicionar endereço personalizado!
     folderName = datetime.now().strftime("%Y-%m-%d|%H.%M.%S.%f.json")
-    folderPath = outputPath / "JSON_lists" / folderName
+    folderPath = output / "JSON_lists" / folderName
 
     with folderPath.open("x", encoding="utf-8") as JSONfolder:
         json.dump(peoples, JSONfolder, ensure_ascii=False, indent=4)
@@ -17,7 +19,7 @@ def saveAsJSON_folder(peoples):     # Lembrar futuramente de adicionar endereço
 
 def saveAsDB_folder(peoples):
     folderName = datetime.now().strftime("%Y-%m-%d|%H.%M.%S.%f.db")
-    folderPath = outputPath / "DB_lists" / folderName
+    folderPath = output / "DB_lists" / folderName
     folderPath.parent.mkdir(parents=True, exist_ok=True)
 
     if isinstance(peoples, dict):
@@ -88,3 +90,4 @@ def saveAsDB_folder(peoples):
         db.executemany(insert_sql, rows)
 
     return folderPath
+

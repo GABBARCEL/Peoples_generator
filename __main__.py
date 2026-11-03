@@ -2,6 +2,7 @@ from _manager import *
 from _manager.Generator import *
 from time import sleep
 from _ASCII import ASCIItext
+from _manager.openExplorerPath import openExplorer
 
 def singlePerson():
     print("\nTo generate your data, we need a range of years during which this person might have been born.")
@@ -74,7 +75,7 @@ def multiplesPeoples():
             break
 
 def save(saveObject):
-    print("\n\n\nThe time has come to save your data!\n\n")
+    print("\n\nThe time has come to save your data!\n\n")
     sleep(2)
     print("     How would you like to save your data?\n")
     print("""
@@ -98,11 +99,11 @@ def save(saveObject):
         else:
             if response == "1":
                 saving = saveAsJSON_folder(saveObject)
-                print(f"List saved successfully in {saving}")
+                print(f"List saved successfully in {saving.as_uri()}")
                 return saving
             elif response == "2":
                 saving = saveAsDB_folder(saveObject)
-                print(f"List saved successfully in {saving}")
+                print(f"List saved successfully in {saving.as_uri()}")
                 return saving
             elif response == "3":
                 print("\n\n\n\n\n")
@@ -121,13 +122,15 @@ if __name__ == "__main__":
     print("Please note that these are FICTITIOUS data, which must not be used for malicious purposes!")
     sleep(3)
     while True:
-        options = ["1", "2", "3"]
+        list_person = 0
+        options = ["1", "2", "3", "4"]
 
         print("\n \n        Choose an action by typing the number corresponding to your choice:")
         print("""
                 [1] Generate a single person
                 [2] Generate a table of people
-                [3] Exit
+                [3] Open outputs folder
+                [4] Exit
 
         """)
 
@@ -142,9 +145,13 @@ if __name__ == "__main__":
         elif response == "2":
             list_person = multiplesPeoples()
 
+        elif response == "3":
+            openExplorer()
+
         else:
             ASCIItext.goodBye()
             sleep(3)
             break
 
-        save(list_person)
+        if list_person != 0:
+            save(list_person)
