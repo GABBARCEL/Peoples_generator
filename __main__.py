@@ -4,9 +4,16 @@ from time import sleep
 from _ASCII import ASCIItext
 from _manager.openExplorerPath import openExplorer
 
+test = True
+
+if test:
+    time = 0
+else:
+    time = 2
+
 def singlePerson():
     print("\nTo generate your data, we need a range of years during which this person might have been born.")
-    sleep(2)
+    sleep(time)
     while True:
         try:
             minYear = int(input(" What would be the minimum year of the range?\n     -"))
@@ -24,7 +31,7 @@ def singlePerson():
 
 def multiplesPeoples():
     print("\nTo generate your data, we need a range of years during which this person might have been born.")
-    sleep(2)
+    sleep(time)
     while True:
         try:
             minYear = int(input(" What would be the minimum year of the range?\n     -"))
@@ -76,7 +83,7 @@ def multiplesPeoples():
 
 def save(saveObject):
     print("\n\nThe time has come to save your data!\n\n")
-    sleep(2)
+    sleep(time)
     print("     How would you like to save your data?\n")
     print("""
                     [1] JSON
@@ -114,13 +121,13 @@ def save(saveObject):
 
 if __name__ == "__main__":
     ASCIItext.welcome()
-    sleep(1)
+    sleep(time / 2)
     print("Welcome to peoples generator!")
-    sleep(2)
+    sleep(time)
     print("Here you can create fake peoples, and save it in JSON files or as databases!")
-    sleep(3)
+    sleep(time + 1)
     print("Please note that these are FICTITIOUS data, which must not be used for malicious purposes!")
-    sleep(3)
+    sleep(time + 1)
     while True:
         list_person = 0
         options = ["1", "2", "3", "4"]
@@ -150,7 +157,7 @@ if __name__ == "__main__":
 
         else:
             ASCIItext.goodBye()
-            sleep(3)
+            sleep(time + 1)
             break
 
         if list_person != 0:
