@@ -3,5 +3,3 @@ from pathlib import Path
 
 
 outputPath = Path(__file__).resolve().parent.parent / "output" # Achei melhor deixar o escopo do output público
-
-outputPath.mkdir(parents=True, exist_ok=True)
