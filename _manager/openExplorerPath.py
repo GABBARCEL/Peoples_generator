@@ -9,11 +9,11 @@ output = outputPath
 
 def openExplorer(path = output):
     if sys.platform == "win32":
-        os.startfile(output)
+        os.startfile(path)
 
     elif sys.platform == "darwin":
-        subprocess.Popen(["open", output])
+        subprocess.Popen(["open", path])
 
     else:
-        subprocess.Popen(["xdg-open", output])
+        subprocess.Popen(["xdg-open", path])
 
