@@ -9,7 +9,7 @@ from _manager.config import outputPath
 output = outputPath
 
 def saveAsJSON_folder(peoples):     # Lembrar futuramente de adicionar endereço personalizado!
-    folderName = datetime.now().strftime("%Y-%m-%d|%H.%M.%S.%f.json")
+    folderName = datetime.now().strftime("%Y-%m-%d_%H.%M.%S.%f.json")
     folderPath = output / "JSON_lists" / folderName
     folderPath.parent.mkdir(parents=True, exist_ok=True)
 
@@ -19,7 +19,7 @@ def saveAsJSON_folder(peoples):     # Lembrar futuramente de adicionar endereço
     return folderPath
 
 def saveAsDB_folder(peoples):
-    folderName = datetime.now().strftime("%Y-%m-%d|%H.%M.%S.%f.db")
+    folderName = datetime.now().strftime("%Y-%m-%d_%H.%M.%S.%f.db")
     folderPath = output / "DB_lists" / folderName
     folderPath.parent.mkdir(parents=True, exist_ok=True)
 
