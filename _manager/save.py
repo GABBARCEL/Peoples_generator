@@ -11,6 +11,7 @@ output = outputPath
 def saveAsJSON_folder(peoples):     # Lembrar futuramente de adicionar endereço personalizado!
     folderName = datetime.now().strftime("%Y-%m-%d|%H.%M.%S.%f.json")
     folderPath = output / "JSON_lists" / folderName
+    folderPath.parent.mkdir(parents=True, exist_ok=True)
 
     with folderPath.open("x", encoding="utf-8") as JSONfolder:
         json.dump(peoples, JSONfolder, ensure_ascii=False, indent=4)
